@@ -2,30 +2,23 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Audio player</title>
+  < title>Audio</title>
   <style>
     body {
       margin: 0;
       background: transparent;
-      font-family: system-ui, sans-serif;
     }
-    .player {
-      padding: 8px;
-    }
-    audio {
+    iframe {
+      border: none;
       width: 100%;
-      outline: none;
+      height: 60px;
     }
   </style>
 </head>
 <body>
-  <div class="player">
-    <audio controls controlsList="nodownload">
-      <source 
-        src="https://drive.google.com/uc?export=download&id=1rb9MmpnVG8LXzxUsB6W6BjpODSE1oFfu"
-        type="audio/mpeg">
-      Il tuo browser non supporta l’audio.
-    </audio>
-  </div>
+  <iframe
+    src="https://drive.google.com/file/d/1rb9MmpnVG8LXzxUsB6W6BjpODSE1oFfu/preview"
+    allow="autoplay">
+  </iframe>
 </body>
 </html>
